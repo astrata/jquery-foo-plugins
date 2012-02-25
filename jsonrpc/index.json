@@ -1,0 +1,20 @@
+{
+  "plugin_name": "jQuery JSON-RPC",
+  "stable": "0.1",
+  "copyright": "Copyright 2012 José Carlos Nieto.",
+  "license": "MIT License",
+  "author": "José Carlos Nieto",
+  "url": "http://lab.jsfoo.org/jquery-jsonrpc",
+  "latest": "0.1",
+  "packages": {
+    "0.1": {
+      "requires": [ "gritter" ],
+      "source": [
+        "0.1/jquery.jsonrpc.js"
+      ],
+      "script": [
+        "0.1/jquery.jsonrpc.min.js"
+      ]
+    }   
+  }
+}

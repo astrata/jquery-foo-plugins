@@ -1,0 +1,19 @@
+{
+  "plugin_name": "jQuery View",
+  "stable": "0.1",
+  "copyright": "Copyright 2012 José Carlos Nieto.",
+  "license": "MIT License",
+  "author": "José Carlos Nieto",
+  "url": "http://lab.jsfoo.org/jquery-view",
+  "latest": "0.1",
+  "packages": {
+    "0.1": {
+      "source": [
+        "0.1/jquery.view.js"
+      ],
+      "script": [
+        "0.1/jquery.view.min.js"
+      ]
+    }   
+  }
+}
