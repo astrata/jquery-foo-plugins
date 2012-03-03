@@ -1,5 +1,5 @@
 {
-  "plugin_name": "Twitter Bootstrap Javascript Plugins",
+  "name": "Twitter Bootstrap Javascript Plugins",
   "stable": "2.0.1",
   "copyright": "Copyright 2012 Twitter, Inc.",
   "license": "http://www.apache.org/licenses/LICENSE-2.0",

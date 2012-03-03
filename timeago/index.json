@@ -1,5 +1,5 @@
 {
-  "plugin_name": "jQuery Timeago",
+  "name": "jQuery Timeago",
   "stable": "0.10.0",
   "copyright": "Copyright (c) 2008-2011, Ryan McGeary.",
   "license": "MIT License",

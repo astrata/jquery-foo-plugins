@@ -13,9 +13,9 @@
       'init': function() {
         return this.each(
           function() {
-            if (!$(this).data('__jsonRpc')) {
+            if (!$(this).data('__jsonr')) {
               $(this).bind('submit', methods.__onSubmit);
-              $(this).data('__jsonRpc', true);
+              $(this).data('__jsonr', true);
             };
           }
         );
@@ -27,7 +27,7 @@
 
       // Really simple browser-sider validation. 
       'validate': function() {
-        var inputs = $(this).jsonRpc('getInputs');
+        var inputs = $(this).jsonr('getInputs');
         inputs.removeClass('validation-error');
 
         var errors = [];
@@ -70,7 +70,7 @@
           };
         };
 
-        $(this).jsonRpc('errors', errors);
+        $(this).jsonr('errors', errors);
 
         if (errors.length > 0) {
           return false;
@@ -92,9 +92,9 @@
 
         var $this = $(ev.currentTarget);
 
-        $this.jsonRpc('lockSubmit');
+        $this.jsonr('lockSubmit');
 
-        if ($this.jsonRpc('validate')) {
+        if ($this.jsonr('validate')) {
          
           // Hidden frame
           var helper = null;
@@ -142,13 +142,13 @@
 
           this.submit();
 
-          $this.jsonRpc('lock');
+          $this.jsonr('lock');
 
         } else {
 
-          $this.jsonRpc('unlockSubmit');
+          $this.jsonr('unlockSubmit');
 
-          var errors = $this.jsonRpc('errors');
+          var errors = $this.jsonr('errors');
 
           errors.shift().input.focus();
 
@@ -163,11 +163,11 @@
 
         window.setTimeout(
           function() {
-            form.jsonRpc('unlock');
+            form.jsonr('unlock');
           }
         , 500);
 
-        form.jsonRpc('unlockSubmit');
+        form.jsonr('unlockSubmit');
 
         var helper = $(this);
 
@@ -220,7 +220,7 @@
               };
 
             } else {
-              form.jsonRpc('rpc', json);
+              form.jsonr('rpc', json);
             };
 
           };
@@ -249,6 +249,14 @@
       },
 
       'rpcSuccess': function(message) {
+        if ($('#freeow').length == 0) {
+          $(document.body).append($('<div id="freeow" class="freeow freeow-top-right"></div>'));
+        };
+        $("#freeow").freeow("Success", message, {
+          'autoHide': true,
+          'classes': [ 'gray' ]
+        });
+        /*
         if ($.browser.msie && $.browser.version.substr(0,1) < 7) {
           alert(message);
         } else {
@@ -256,9 +264,18 @@
             text: message
           });
         }
+        */
       },
       
       'rpcError': function(message) {
+        if ($('#freeow').length == 0) {
+          $(document.body).append($('<div id="freeow" class="freeow freeow-top-right"></div>'));
+        };
+        $("#freeow").freeow("Error", message, {
+          'autoHide': true,
+          'classes': [ 'gray', 'error' ]
+        });
+        /*
         if ($.browser.msie && $.browser.version.substr(0,1) < 7) {
           alert(message);
         } else {
@@ -266,6 +283,7 @@
             text: message
           });
         }
+        */
       },
 
       'rpc': function(json) {
@@ -277,7 +295,7 @@
         for (var method in json) {
           var args = json[method];
           var name = 'rpc'+method.charAt(0).toUpperCase()+method.substr(1);
-          $(this).jsonRpc(name, args);
+          $(this).jsonr(name, args);
         };
       },
 
@@ -286,7 +304,7 @@
       },
  
       'lock': function() {
-        var fields = $(this).jsonRpc('getInputs');
+        var fields = $(this).jsonr('getInputs');
 
         fields.each(
           function() {
@@ -304,7 +322,7 @@
 
       // Unlock form
       'unlock': function() {
-        var fields = $(this).jsonRpc('getInputs');
+        var fields = $(this).jsonr('getInputs');
 
         fields.each(
           function() {
@@ -344,12 +362,12 @@
       }
     };
 
-    $.foo.plugin('jsonRpc', methods);
+    $.foo.plugin('jsonr', methods);
 
     var start = function() {
-      $('form.json-rpc').each(
+      $('form.jsonr').each(
         function() {
-          $(this).jsonRpc();
+          $(this).jsonr();
         }
       );
     };

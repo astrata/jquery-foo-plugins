@@ -1,19 +1,19 @@
 {
-  "plugin_name": "jQuery JSON-RPC",
+  "name": "jQuery.jsonr",
   "stable": "0.1",
   "copyright": "Copyright 2012 José Carlos Nieto.",
   "license": "MIT License",
   "author": "José Carlos Nieto",
-  "url": "http://lab.jsfoo.org/jquery-jsonrpc",
+  "url": "http://jsfoo.org/contents/jquery-jsonr",
   "latest": "0.1",
   "packages": {
     "0.1": {
-      "requires": [ "gritter" ],
+      "requires": [ "freeow" ],
       "source": [
-        "0.1/jquery.jsonrpc.js"
+        "0.1/jquery.jsonr.js"
       ],
       "script": [
-        "0.1/jquery.jsonrpc.min.js"
+        "0.1/jquery.jsonr.min.js"
       ]
     }   
   }
