@@ -10,9 +10,6 @@
     "3.0.6": {
       "source": [
         "3.0.6/jquery.mousewheel.js"
-      ],
-      "script": [
-        "3.0.6/jquery.mousewheel.min.js"
       ]
     }   
   }

@@ -11,9 +11,6 @@
       "source": [
         "1.7.3/js/jquery.gritter.js"
       ],
-      "script": [
-        "1.7.3/js/jquery.gritter.min.js"
-      ],
       "style": [
         "1.7.3/css/jquery.gritter.css"
       ]

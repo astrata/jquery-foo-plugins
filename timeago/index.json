@@ -10,9 +10,6 @@
     "0.10.0": {
       "source": [
         "0.10.0/jquery.timeago.js"
-      ],
-      "script": [
-        "0.10.0/jquery.timeago.min.js"
       ]
     }   
   }

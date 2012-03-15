@@ -11,9 +11,6 @@
       "source": [
         "1.0.1/jquery.freeow.js"
       ],
-      "script": [
-        "1.0.1/jquery.freeow.min.js"
-      ],
       "style": [
         "1.0.1/style/freeow.css"
       ]

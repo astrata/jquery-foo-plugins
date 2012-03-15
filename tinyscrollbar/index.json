@@ -10,9 +10,6 @@
     "1.66": {
       "source": [
         "1.66/jquery.tinyscrollbar.js"
-      ],
-      "script": [
-        "1.66/jquery.tinyscrollbar.min.js"
       ]
     }   
   }

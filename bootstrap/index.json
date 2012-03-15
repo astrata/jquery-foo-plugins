@@ -21,20 +21,6 @@
         "2.0.1/bootstrap-tab.js",
         "2.0.1/bootstrap-transition.js",
         "2.0.1/bootstrap-typeahead.js"
-      ],
-      "script": [
-        "2.0.1/bootstrap-alert.min.js",
-        "2.0.1/bootstrap-button.min.js",
-        "2.0.1/bootstrap-carousel.min.js",
-        "2.0.1/bootstrap-collapse.min.js",
-        "2.0.1/bootstrap-dropdown.min.js",
-        "2.0.1/bootstrap-modal.min.js",
-        "2.0.1/bootstrap-scrollspy.min.js",
-        "2.0.1/bootstrap-tab.min.js",
-        "2.0.1/bootstrap-tooltip.min.js",
-        "2.0.1/bootstrap-popover.min.js",
-        "2.0.1/bootstrap-transition.min.js",
-        "2.0.1/bootstrap-typeahead.min.js"
       ]
     }   
   }

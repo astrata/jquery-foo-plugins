@@ -10,9 +10,6 @@
     "1.9": {
       "source": [
         "1.9/jquery.tinycarousel.js"
-      ],
-      "script": [
-        "1.9/jquery.tinycarousel.min.js"
       ]
     }   
   }

@@ -11,9 +11,6 @@
       "requires": [ "freeow" ],
       "source": [
         "0.1/jquery.jsonr.js"
-      ],
-      "script": [
-        "0.1/jquery.jsonr.min.js"
       ]
     }   
   }

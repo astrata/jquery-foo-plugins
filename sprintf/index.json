@@ -10,9 +10,6 @@
     "0.0.6": {
       "source": [
         "0.0.6/jquery.sprintf.js"
-      ],
-      "script": [
-        "0.0.6/jquery.sprintf.min.js"
       ]
     }   
   }

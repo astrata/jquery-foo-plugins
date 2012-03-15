@@ -10,9 +10,6 @@
     "0.1": {
       "source": [
         "0.1/jquery.view.js"
-      ],
-      "script": [
-        "0.1/jquery.view.min.js"
       ]
     }   
   }
