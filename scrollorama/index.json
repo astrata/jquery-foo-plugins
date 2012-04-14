@@ -1,0 +1,16 @@
+{
+  "name": "jquery.scrollorama.js",
+  "stable": "latest",
+  "copyright": "Copyright, John Polacek",
+  "license": "MIT and GPL",
+  "author": "John Polacek",
+  "url": "http://johnpolacek.github.com/scrollorama/",
+  "latest": "latest",
+  "packages": {
+    "latest": {
+      "source": [
+        "latest/jquery.scrollorama.js"
+      ]
+    }   
+  }
+}
