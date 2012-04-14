@@ -156,6 +156,8 @@
                 } else if (addrem[1] == '-') {
                   item.removeClass(addrem[2]);
                 };
+              } else {
+                item.attr('class', local);
               };
             } else {
               if (attr[1] == 'text') {

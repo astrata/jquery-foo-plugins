@@ -200,8 +200,13 @@
             callback.apply(callback, [ json ]);
 
           } else {
-          
-            callback = form.find('[name="_callback"]');
+
+            callback = form.attr('callback');
+
+            if (callback.length == 0) {
+              // deprecated.
+              callback = form.find('[name="_callback"]');
+            };
 
             if (callback.length > 0) {
 
