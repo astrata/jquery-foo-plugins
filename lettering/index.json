@@ -1,0 +1,16 @@
+{
+  "name": "Lettering.js",
+  "stable": "0.6.1",
+  "copyright": "Copyright 2010, Dave Rupert",
+  "license": "WTFPL License http://sam.zoy.org/wtfpl/",
+  "author": "Dave Rupert",
+  "url": "http://daverupert.com",
+  "latest": "0.6.1",
+  "packages": {
+    "0.6.1": {
+      "source": [
+        "0.6.1/jquery.lettering.js"
+      ]
+    }   
+  }
+}
