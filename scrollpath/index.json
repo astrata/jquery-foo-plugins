@@ -8,6 +8,7 @@
   "latest": "1.1.1",
   "packages": {
     "1.1.1": {
+      "requires": [ "easing", "prefixfree" ],
       "source": [
         "1.1.1/jquery.scrollpath.js"
       ],
