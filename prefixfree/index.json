@@ -1,0 +1,17 @@
+{
+  "name": "prefixfree",
+  "stable": "1.0.2",
+  "copyright": "Copyright, Lea Verou",
+  "license": "MIT License",
+  "author": "Lea Verou",
+  "url": "https://github.com/LeaVerou/prefixfree",
+  "latest": "1.0.2",
+  "packages": {
+    "1.0.2": {
+      "source": [
+        "1.0.2/prefixfree.js",
+        "1.0.2/prefixfree.jquery.js"
+      ]
+    }   
+  }
+}
