@@ -1,0 +1,16 @@
+{
+  "name": "jQuery.scrollTo",
+  "stable": "1.4.2",
+  "copyright": "Copyright (c) 2007-2009 Ariel Flesler",
+  "license": "MIT License, GPL License",
+  "author": "Ariel Flesler",
+  "url": "http://flesler.blogspot.com/2007/10/jqueryscrollto.html",
+  "latest": "1.4.2",
+  "packages": {
+    "1.4.2": {
+      "source": [
+        "1.4.2/jquery.scrollTo-1.4.2.js"
+      ]
+    }   
+  }
+}
