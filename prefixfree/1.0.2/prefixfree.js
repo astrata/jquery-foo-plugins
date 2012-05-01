@@ -25,20 +25,24 @@ var self = window.StyleFix = {
 		var url = link.href || link.getAttribute('data-href'),
 		    base = url.replace(/[^\/]+$/, ''),
 		    parent = link.parentNode,
-		    xhr = new XMLHttpRequest();
+		    xhr = new XMLHttpRequest(),
+		    process;
 		
-		xhr.open('GET', url);
-
 		xhr.onreadystatechange = function() {
 			if(xhr.readyState === 4) {
+				process();
+			}
+		};
+
+		process = function() {
 				var css = xhr.responseText;
 				
-				if(css && link.parentNode) {
+				if(css && link.parentNode && (!xhr.status || xhr.status < 400 || xhr.status > 600)) {
 					css = self.fix(css, true, link);
 					
 					// Convert relative URLs to absolute, if needed
 					if(base) {
-						css = css.replace(/url\(((?:"|')?)(.+?)\1\)/gi, function($0, quote, url) {
+						css = css.replace(/url\(\s*?((?:"|')?)(.+?)\1\s*?\)/gi, function($0, quote, url) {
 							if(!/^([a-z]{3,10}:|\/|#)/i.test(url)) { // If url not absolute & not a hash
 								// May contain sequences like /../ and /./ but those DO work
 								return 'url("' + base + url + '")';
@@ -60,10 +64,21 @@ var self = window.StyleFix = {
 					parent.insertBefore(style, link);
 					parent.removeChild(link);
 				}
-			}
 		};
-		
-		xhr.send(null);
+
+		try {
+			xhr.open('GET', url);
+			xhr.send(null);
+		} catch (e) {
+			// Fallback to XDomainRequest if available
+			if (typeof XDomainRequest != "undefined") {
+				xhr = new XDomainRequest();
+				xhr.onerror = xhr.onprogress = function() {};
+				xhr.onload = process;
+				xhr.open("GET", url);
+				xhr.send(null);
+			}
+		}
 		
 		link.setAttribute('data-inprogress', '');
 	},
@@ -135,7 +150,7 @@ function $(expr, con) {
 })();
 
 /**
- * PrefixFree 1.0.4
+ * PrefixFree 1.0.6
  * @author Lea Verou
  * MIT license
  */
@@ -145,36 +160,39 @@ if(!window.StyleFix || !window.getComputedStyle) {
 	return;
 }
 
+// Private helper
+function fix(what, before, after, replacement, css) {
+	what = self[what];
+	
+	if(what.length) {
+		var regex = RegExp(before + '(' + what.join('|') + ')' + after, 'gi');
+
+		css = css.replace(regex, replacement);
+	}
+	
+	return css;
+}
+
 var self = window.PrefixFree = {
 	prefixCSS: function(css, raw) {
 		var prefix = self.prefix;
 		
-		function fix(what, before, after, replacement) {
-			what = self[what];
-			
-			if(what.length) {
-				var regex = RegExp(before + '(' + what.join('|') + ')' + after, 'gi');
-
-				css = css.replace(regex, replacement);
-			}
-		}
-		
-		fix('functions', '(\\s|:|,)', '\\s*\\(', '$1' + prefix + '$2(');
-		fix('keywords', '(\\s|:)', '(\\s|;|\\}|$)', '$1' + prefix + '$2$3');
-		fix('properties', '(^|\\{|\\s|;)', '\\s*:', '$1' + prefix + '$2:');
+		css = fix('functions', '(\\s|:|,)', '\\s*\\(', '$1' + prefix + '$2(', css);
+		css = fix('keywords', '(\\s|:)', '(\\s|;|\\}|$)', '$1' + prefix + '$2$3', css);
+		css = fix('properties', '(^|\\{|\\s|;)', '\\s*:', '$1' + prefix + '$2:', css);
 		
 		// Prefix properties *inside* values (issue #8)
 		if (self.properties.length) {
 			var regex = RegExp('\\b(' + self.properties.join('|') + ')(?!:)', 'gi');
 			
-			fix('valueProperties', '\\b', ':(.+?);', function($0) {
+			css = fix('valueProperties', '\\b', ':(.+?);', function($0) {
 				return $0.replace(regex, prefix + "$1")
-			});
+			}, css);
 		}
 		
 		if(raw) {
-			fix('selectors', '', '\\b', self.prefixSelector);
-			fix('atrules', '@', '\\b', '@' + prefix + '$1');
+			css = fix('selectors', '', '\\b', self.prefixSelector, css);
+			css = fix('atrules', '@', '\\b', '@' + prefix + '$1', css);
 		}
 		
 		// Fix double prefixing
@@ -183,11 +201,25 @@ var self = window.PrefixFree = {
 		return css;
 	},
 	
-	// Warning: prefixXXX functions prefix no matter what, even if the XXX is supported prefix-less
+	property: function(property) {
+		return (self.properties.indexOf(property)? self.prefix : '') + property;
+	},
+	
+	value: function(value, property) {
+		value = fix('functions', '(^|\\s|,)', '\\s*\\(', '$1' + self.prefix + '$2(', value);
+		value = fix('keywords', '(^|\\s)', '(\\s|$)', '$1' + self.prefix + '$2$3', value);
+		
+		// TODO properties inside values
+		
+		return value;
+	},
+	
+	// Warning: Prefixes no matter what, even if the selector is supported prefix-less
 	prefixSelector: function(selector) {
 		return selector.replace(/^:{1,2}/, function($0) { return $0 + self.prefix })
 	},
 	
+	// Warning: Prefixes no matter what, even if the property is supported prefix-less
 	prefixProperty: function(property, camelCase) {
 		var prefixed = self.prefix + property;
 		
