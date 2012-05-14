@@ -1,0 +1,34 @@
+html, body {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.screen-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0);  
+  -webkit-transition: background 0.8s ease;
+     -moz-transition: background 0.8s ease;
+      -ms-transition: background 0.8s ease;
+       -o-transition: background 0.8s ease;
+          transition: background 0.8s ease;
+}
+.screen-hidden {
+  display: none;
+}
+.screen-wrapper {
+  position: absolute;
+  bottom: 0px;
+  height: 100%;
+  right: 0px;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+}
+.screen-container .slide {
+  position: absolute;
+}
