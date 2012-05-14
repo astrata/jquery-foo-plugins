@@ -8,6 +8,7 @@
   "latest": "0.1",
   "packages": {
     "0.1": {
+      "requires": [ "mousewheel", "transit", "swipe" ],
       "source": [
         "0.1/jquery.screen.js"
       ],
