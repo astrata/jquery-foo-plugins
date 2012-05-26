@@ -1,0 +1,41 @@
+.number-picker {
+  width: 200px;
+  color: #333;
+  margin: 0 auto;
+}
+.number-picker .top {
+  border-radius: 5px 5px 0px 0px;
+}
+.number-picker .bottom {
+  border-radius: 0px 0px 5px 5px;
+}
+.number-picker .button {
+  height: 40px; 
+  text-align: center;
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: bold;
+  background: #dcdcdc;
+  border: 1px solid #eeeeee;
+  cursor: pointer;
+}
+.number-picker .numbers {
+  height: 60px;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+}
+.number-picker .numbers ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  width: 100%;
+}
+.number-picker .numbers ul li {
+  height: 60px;
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  line-height: 60px;
+}
