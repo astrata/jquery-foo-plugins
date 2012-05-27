@@ -18,6 +18,7 @@
     $.screen.args    = [];
     $.screen.screens = [];
     $.screen.history = [];
+    $.screen.t       = false;
 
     $.screen.transitions = {
       '_unselect': function(el, transition, speed) {
@@ -39,7 +40,13 @@
         });
       },
       '_select': function(el, transition, speed) {
+        var curr = null;
+        if ($.screen.t) {
+          var curr = $.screen.screens[$.screen.current];
+          $(curr).addClass('screen-hidden');
+        };
         $.screen.current = $(el).data('screen-index');
+        $.screen.t = true;
         
         $(document.body).addClass('on-'+$(el).attr('id'));
 
@@ -47,8 +54,9 @@
         $(el).removeClass('screen-hidden'); 
         
         $(el).transition(transition, speed, function() {
-          $(el).screen('fire', 'load');
           document.location.hash = $(el).attr('id');
+          $(el).screen('fire', 'load');
+          $.screen.t = false;
         });
       },
       'puff': function(a) {
