@@ -1,0 +1,16 @@
+{
+  "name": "jQuery.hashchange",
+  "stable": "1.3",
+  "copyright": "Copyright (c) 2010 \"Cowboy\" Ben Alman",
+  "license": "Dual licensed under the MIT and GPL licenses",
+  "author": "Ben Alman",
+  "url": "http://benalman.com/projects/jquery-hashchange-plugin/",
+  "latest": "1.3",
+  "packages": {
+    "1.3": {
+      "source": [
+        "1.3/jquery.ba-hashchange.js"
+      ]
+    }   
+  }
+}
