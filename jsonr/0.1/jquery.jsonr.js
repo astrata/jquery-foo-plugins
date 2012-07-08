@@ -9,7 +9,7 @@
 (
   function($) {
     var methods = {
-      
+
       'init': function() {
         return this.each(
           function() {
@@ -25,7 +25,7 @@
         $(this).data('callback', fn);
       },
 
-      // Really simple browser-sider validation. 
+      // Really simple browser-sider validation.
       'validate': function() {
         var inputs = $(this).jsonr('getInputs');
         inputs.removeClass('validation-error');
@@ -42,19 +42,19 @@
               error = 'validate-email';
             };
           };
-          
+
           if (input.hasClass('validate-numeric')) {
             if (!val.match(/^[0-9]+$/)) {
               error = 'validate-numeric';
             };
           };
-          
+
           if (input.hasClass('validate-not-null')) {
             if (!val) {
               error = 'validate-not-null';
             };
           };
-          
+
           if (input.hasClass('validate-checked')) {
             if (!input.attr('checked')) {
               error = 'validate-checked';
@@ -95,7 +95,7 @@
         $this.jsonr('lockSubmit');
 
         if ($this.jsonr('validate')) {
-         
+
           // Hidden frame
           var helper = null;
 
@@ -106,26 +106,26 @@
             if (!document.getElementById(target)) {
 
               if ($.browser.msie && $.browser.version.substr(0,1) < 8) {
-                
+
                 // IE hack
                 var helper = $('<iframe id="'+target+'" name="'+target+'" src="about:blank" />');
                 $(document.body).append(helper);
                 helper = $(helper);
 
               } else {
-              
+
                 var helper = $('<iframe />', {
                   'id':   target,
                   'name': target,
                   'src':  $.browser.opera ? 'opera:about' : 'about:blank'
                 }).appendTo(document.body);
               }
-            
+
               $(helper).hide();
             }
           }
 
-          // IE6 hack that waits for helper to be appended 
+          // IE6 hack that waits for helper to be appended
           while (!document.getElementById(target)) {
             // Nothing really.
           };
@@ -133,10 +133,10 @@
           helper.bind(
             'load',
             methods.__onReply
-          ); 
+          );
 
           helper.data('origin', $this);
-      
+
           // Submit through the iframe and lock.
           $this.attr('target', helper.attr('name'));
 
@@ -180,7 +180,7 @@
         }
 
         var response = doc.body.innerHTML;
-        
+
         var txt = $('<textarea/>')[0];
 
         txt.innerHTML = response.replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -195,24 +195,19 @@
 
           var callback = form.data('callback');
 
-          if (callback) {
-            
+          if (callback != undefined) {
+
             callback.apply(callback, [ json ]);
 
           } else {
 
-            callback = form.attr('callback');
-
-            if (callback.length == 0) {
-              // deprecated.
-              callback = form.find('[name="_callback"]');
-            };
+            callback = form.attr('data-callback');
 
             if (callback.length > 0) {
 
               var path  = callback.val().split('.');
               var fn    = path.pop();
-              
+
               var ob = window;
               while (path.length > 0) {
                 ob = ob[path.shift()];
@@ -271,7 +266,7 @@
         }
         */
       },
-      
+
       'rpcError': function(message) {
         if ($('#freeow').length == 0) {
           $(document.body).append($('<div id="freeow" class="freeow freeow-top-right"></div>'));
@@ -294,9 +289,9 @@
       'rpc': function(json) {
 
         if (!json.errorMessage && !json.inputError && !json.cancelReset) {
-          $(this)[0].reset(); 
+          $(this)[0].reset();
         };
-        
+
         for (var method in json) {
           var args = json[method];
           var name = 'rpc'+method.charAt(0).toUpperCase()+method.substr(1);
@@ -307,7 +302,7 @@
       'getInputs': function() {
         return $.merge($('input', this), $('select', this), $('textarea', this));
       },
- 
+
       'lock': function() {
         var fields = $(this).jsonr('getInputs');
 
