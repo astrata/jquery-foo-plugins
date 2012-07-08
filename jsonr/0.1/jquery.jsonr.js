@@ -195,17 +195,15 @@
 
           var callback = form.data('callback');
 
-          if (callback != undefined) {
-
-            callback.apply(callback, [ json ]);
-
-          } else {
-
+          if (!callback) {
             callback = form.attr('data-callback');
+          };
 
-            if (callback.length > 0) {
-
-              var path  = callback.val().split('.');
+          if (callback != undefined) {
+            if (typeof(callback) == 'function') {
+              return callback.apply(callback, json);
+            } else {
+              var path  = callback.split('.');
               var fn    = path.pop();
 
               var ob = window;
@@ -219,10 +217,9 @@
                 return ob[fn](json);
               };
 
-            } else {
-              form.jsonr('rpc', json);
-            };
-
+            }
+          } else {
+            form.jsonr('rpc', json);
           };
 
         };
