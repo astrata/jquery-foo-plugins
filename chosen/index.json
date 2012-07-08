@@ -1,0 +1,19 @@
+{
+  "name": "Chosen",
+  "stable": "0.9.8",
+  "copyright": "Copyright (c) 2011 Harvest http://getharvest.com",
+  "license": "MIT License",
+  "author": "Patrick Filler for Harvest",
+  "url": "https://github.com/harvesthq/chosen/",
+  "latest": "0.9.8",
+  "packages": {
+    "0.9.8": {
+      "source": [
+        "0.9.8/chosen.jquery.js",
+      ],
+      "style": [
+        "0.9.8/chosen.css",
+      ]
+    }   
+  }
+}
