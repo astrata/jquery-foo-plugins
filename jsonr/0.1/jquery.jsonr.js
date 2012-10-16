@@ -201,7 +201,7 @@
 
           if (callback != undefined) {
             if (typeof(callback) == 'function') {
-              return callback.apply(callback, json);
+              return callback.apply(callback, [ json ]);
             } else {
               var path  = callback.split('.');
               var fn    = path.pop();
