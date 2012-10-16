@@ -1,12 +1,17 @@
 {
   "name": "Twitter Bootstrap Javascript Plugins",
-  "stable": "2.0.1",
+  "stable": "2.1.1",
   "copyright": "Copyright 2012 Twitter, Inc.",
   "license": "http://www.apache.org/licenses/LICENSE-2.0",
   "author": "Twitter, Inc.",
-  "url": "https://github.com/twitter/bootstrap",
-  "latest": "2.0.1",
+  "url": "http://twitter.github.com/bootstrap",
+  "latest": "2.1.1",
   "packages": {
+    "2.1.1": {
+      "source": [
+        "2.1.1/bootstrap.js"
+      ]
+    },
     "2.0.1": {
       "source": [
         "2.0.1/bootstrap-alert.js",
