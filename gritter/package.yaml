@@ -1,0 +1,15 @@
+---
+  name: "Gritter"
+  stable: "1.7.3"
+  copyright: "Copyright (c) 2012 Jordan Boesch."
+  license: "MIT and GPL License"
+  author: "Jordan Boesch"
+  url: "http://boedesign.com/blog/2009/07/11/growl-for-jquery-gritter/"
+  latest: "1.7.3"
+  packages: 
+    1.7.3: 
+      source: 
+        - "1.7.3/js/jquery.gritter.js"
+      style: 
+        - "1.7.3/css/jquery.gritter.css"
+

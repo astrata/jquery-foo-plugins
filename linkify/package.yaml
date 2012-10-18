@@ -1,0 +1,13 @@
+---
+  name: "jQuery.linkify"
+  stable: "1.0"
+  copyright: "Copyright 2009 Már Örlygsson, Hugsmiðjan ehf."
+  license: "MIT and GPL License"
+  author: "Már Örlygsson, Hugsmiðjan ehf."
+  url: "http://github.com/maranomynet/linkify/"
+  latest: "1.0"
+  packages: 
+    1.0: 
+      source: 
+        - "1.0/jquery.linkify.js"
+

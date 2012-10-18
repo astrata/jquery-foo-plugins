@@ -1,0 +1,13 @@
+---
+  name: "sprintf"
+  stable: "0.0.6"
+  copyright: "Copyright © 2008 Carl Fürstenberg."
+  license: "MIT, GPL or BSD License"
+  author: "Carl Fürstenberg"
+  url: "https://github.com/azatoth/jquery-sprintf"
+  latest: "0.0.6"
+  packages: 
+    0.0.6: 
+      source: 
+        - "0.0.6/jquery.sprintf.js"
+

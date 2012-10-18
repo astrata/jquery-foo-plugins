@@ -1,0 +1,15 @@
+---
+  name: "jQuery.jsonr"
+  stable: "0.1"
+  copyright: "Copyright 2012 José Carlos Nieto."
+  license: "MIT License"
+  author: "José Carlos Nieto"
+  url: "http://jsfoo.org/contents/jquery-jsonr"
+  latest: "0.1"
+  packages: 
+    0.1: 
+      requires: 
+        - "freeow"
+      source: 
+        - "0.1/jquery.jsonr.js"
+

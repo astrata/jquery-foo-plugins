@@ -1,0 +1,19 @@
+---
+  name: "jQuery.screen"
+  stable: "0.1"
+  copyright: "Copyright 2012 José Carlos Nieto."
+  license: "MIT License"
+  author: "José Carlos Nieto"
+  url: "http://xiam.menteslibres.org/p/jquery-screen"
+  latest: "0.1"
+  packages: 
+    0.1: 
+      requires: 
+        - "mousewheel"
+        - "transit"
+        - "swipe"
+      source: 
+        - "0.1/jquery.screen.js"
+      style: 
+        - "0.1/jquery.screen.css"
+

@@ -1,0 +1,15 @@
+---
+  name: "ResponsiveSlides"
+  stable: "1.24"
+  copyright: "Copyright (c) 2011-2012 Viljami Salminen"
+  license: "MIT License"
+  author: "Viljami Salminen"
+  url: "http://responsive-slides.viljamis.com/"
+  latest: "1.24"
+  packages: 
+    1.24: 
+      source: 
+        - "1.24/responsiveslides.js"
+      style: 
+        - "1.24/responsiveslides.css"
+

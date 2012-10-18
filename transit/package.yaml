@@ -1,0 +1,13 @@
+---
+  name: "jQuery transit"
+  stable: "0.1.3"
+  copyright: "Copyright 2011, Rico Sta. Cruz"
+  license: "MIT License"
+  author: "Rico Sta. Cruz"
+  url: "http://ricostacruz.com/jquery.transit"
+  latest: "0.1.3"
+  packages: 
+    0.1.3: 
+      source: 
+        - "0.1.3/jquery.transit.js"
+
