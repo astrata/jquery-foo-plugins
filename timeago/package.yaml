@@ -1,12 +1,15 @@
 ---
   name: "jQuery Timeago"
-  stable: "0.10.0"
+  stable: "0.11.4"
   copyright: "Copyright (c) 2008-2011, Ryan McGeary."
   license: "MIT License"
   author: "Ryan McGeary"
   url: "http://timeago.yarp.com/"
-  latest: "0.10.0"
-  packages: 
+  latest: "0.11.4"
+  packages:
+    0.11.4:
+      source:
+        - "0.11.4/jquery.timeago.js" 
     0.10.0: 
       source: 
         - "0.10.0/jquery.timeago.js"

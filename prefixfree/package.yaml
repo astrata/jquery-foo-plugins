@@ -1,14 +1,19 @@
 ---
   name: "prefixfree"
-  stable: "1.0.2"
+  stable: "1.0.7"
   copyright: "Copyright, Lea Verou"
   license: "MIT License"
   author: "Lea Verou"
   url: "https://github.com/LeaVerou/prefixfree"
-  latest: "1.0.2"
+  latest: "1.0.7"
   packages: 
-    1.0.2: 
-      source: 
-        - "1.0.2/prefixfree.js"
-        - "1.0.2/prefixfree.jquery.js"
+  1.0.7:
+    source:
+      - "1.0.7/prefixfree.js"
+      - "1.0.7/prefixfree.js" 
+
+  1.0.2: 
+    source: 
+      - "1.0.2/prefixfree.js"
+      - "1.0.2/prefixfree.jquery.js"
 

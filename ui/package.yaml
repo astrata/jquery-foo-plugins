@@ -1,12 +1,17 @@
 ---
   name: "jQuery UI"
-  stable: "1.8.17"
+  stable: "1.9.0"
   copyright: "Copyright 2011, AUTHORS.txt (http://jqueryui.com/about"
   license: "MIT"
   author: "http://jqueryui.com/about"
   url: "http://jquery-ui.com"
-  latest: "1.8.17"
-  packages: 
+  latest: "1.9.0"
+  packages:
+    1.9.0:
+      source:
+        - "1.9.0/js/jquery-ui-1.9.0.custom.js"
+      style:
+        - "1.9.0/css/ui-lightness/jquery-ui-1.9.0.custom.css 
     1.8.17: 
       source: 
         - "1.8.17/js/jquery-ui-1.8.17.custom.js"

@@ -1,12 +1,15 @@
 ---
   name: "jQuery TouchSwipe"
-  stable: "1.2.5"
+  stable: "1.4.0"
   copyright: "Copyright (c) 2010 Matt Bryson (www.skinkers.com)"
   license: "Dual licensed under the MIT or GPL Version 2 licenses."
   author: "Matt Bryson"
   url: "http://labs.skinkers.com/touchSwipe/"
-  latest: "1.2.5"
+  latest: "1.4.0"
   packages: 
+    1.4.0:
+      source:
+        - "1.4.0/jquer.touchSwipe.js"
     1.2.5: 
       source: 
         - "1.2.5/jquery.touchSwipe-1.2.5.js"

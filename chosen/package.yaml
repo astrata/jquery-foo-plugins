@@ -5,8 +5,14 @@
   license: "MIT License"
   author: "Patrick Filler for Harvest"
   url: "https://github.com/harvesthq/chosen/"
-  latest: "0.9.8"
-  packages: 
+  latest: "0.9.8.1"
+  packages:
+    0.9.8.1:
+      source:
+        - "0.9.8.1/chosen.jquery.js"
+      style:
+        - "0.9.8.1/chosen.css"
+
     0.9.8: 
       source: 
         - "0.9.8/chosen.jquery.js"

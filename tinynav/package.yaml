@@ -1,12 +1,15 @@
 ---
   name: "TinyNav"
-  stable: "1.03"
+  stable: "1.05"
   copyright: "Copyright (c) 2011-2012 Viljami Salminen"
   license: "MIT License"
   author: "Viljami Salminen"
   url: "http://tinynav.viljamis.com/"
-  latest: "1.03"
-  packages: 
+  latest: "1.05"
+  packages:
+    1.05:
+      source:
+        - "1.05/tinynav.js" 
     1.03: 
       source: 
         - "1.03/tinynav.js"

@@ -5,8 +5,14 @@
   license: "MIT License"
   author: "Victor Coulon"
   url: "http://victorcoulon.fr"
-  latest: "1.4.1"
+  latest: "2.0"
   packages: 
+    2.0:
+      source:
+        - "2.0/curtain.js"
+      style:
+        - "2.0/curtain.js"
+  
     1.4.1: 
       source: 
         - "1.4.1/curtain.js"

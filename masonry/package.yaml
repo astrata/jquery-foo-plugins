@@ -1,12 +1,15 @@
 ---
   name: "jQuery Masonry"
-  stable: "2.1.03"
+  stable: "2.1.05"
   copyright: "Copyright 2012 David DeSandro"
   license: "Licensed under the MIT license"
   author: "David DeSandro"
   url: "http://masonry.desandro.com"
-  latest: "2.1.03"
+  latest: "2.1.05"
   packages: 
+    2.1.05:
+      source:
+        - "2.1.05/jquery.masonry.js"
     2.1.03: 
       source: 
         - "2.1.03/jquery.masonry.js"
