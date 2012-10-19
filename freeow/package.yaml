@@ -1,12 +1,18 @@
 ---
   name: "Freeow!"
-  stable: "1.0.1"
+  stable: "1.0.2"
   copyright: "Copyright (c) 2011 PJ Dietz."
   license: "MIT License"
   author: "PJ Dietz"
   url: "http://pjdietz.com/jquery-plugins/freeow/"
-  latest: "1.0.1"
+  latest: "1.0.2"
   packages: 
+    1.0.2:
+      source:
+        - "1.0.2/jquery.freeow.js"
+      style:
+        - "1.0.2/style/freeow.css"
+
     1.0.1: 
       source: 
         - "1.0.1/jquery.freeow.js"

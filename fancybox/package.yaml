@@ -1,12 +1,26 @@
 ---
   name: "jQuery.fancybox"
-  stable: "1.3.4"
+  stable: "2.1.2"
   copyright: "Copyright (c) 2008 - 2010 Janis Skarnelis"
   license: "Dual licensed under the MIT and GPL licenses"
   author: "Janis Skarnelis"
   url: "http://fancybox.net/"
-  latest: "1.3.4"
+  latest: "2.1.2"
   packages: 
+    2.1.2:
+      requires:
+        - "mousewheel"
+      source:
+        - "2.1.2/jquery.fancybox.js"
+        - "2.1.2/jquery.fancybox.pack.js"
+        - "2.1.2/helpers/jquery.fancybox-buttons.js"
+        - "2.1.2/helpers/jquery.fancybox-media.js"
+        - "2.1.2/helpers/jquery.fancybox-thumbs.js"
+      style:
+        - "2.1.2/jquery.fancybox.css"
+        - "2.1.2/jquery.fancybox-buttons.css"
+        - "2.1.2/jquery.fancybox-thumbs.js"    
+
     1.3.4: 
       requires: 
         - "easing"

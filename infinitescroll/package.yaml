@@ -1,12 +1,16 @@
 ---
   name: "Infinite Scroll"
-  stable: "2.0b2.120311"
+  stable: "2.0b2.120519"
   copyright: "Copyright 2011 Paul Irish & Luke Shumard"
   license: "Licensed under the MIT license"
   author: "Paul Irish"
   url: "http://www.infinite-scroll.com/infinite-scroll-jquery-plugin/"
-  latest: "2.0b2.120311"
-  packages: 
+  latest: "2.0b2.120519"
+  packages:
+    2.0b2.120519:
+      source:
+        - "2.0b2.120519/jquery.infinitescroll.js"    
+ 
     2.0b2.120311: 
       source: 
         - "2.0b2.120311/jquery.infinitescroll.js"

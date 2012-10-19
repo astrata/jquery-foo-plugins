@@ -1,17 +1,25 @@
 ---
   name: "jquery.scrolldeck.js"
-  stable: "latest"
+  stable: "0.1.1"
   copyright: "Copyright, John Polacek"
   license: "MIT and GPL"
   author: "John Polacek"
   url: "https://github.com/johnpolacek/scrolldeck.js"
-  latest: "latest"
+  latest: "0.1.1"
   packages: 
-    latest: 
+    0.1.1: 
       requires: 
         - "scrollorama"
         - "easing"
         - "scrollto"
       source: 
-        - "latest/jquery.scrolldeck.js"
+        - "0.1.1/jquery.scrolldeck.js"
+    
+    0.1:
+      requires:
+        - "scrollorama"
+        - "easing"
+        - "scrollto"
+      source:
+        - "0.1/jquery.scrolldeck.js"
 

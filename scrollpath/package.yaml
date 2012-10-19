@@ -14,5 +14,5 @@
       source: 
         - "1.1.1/jquery.scrollpath.js"
       style: 
-        - "1.4.1/scrollpath.css"
+        - "1.1.1/scrollpath.css"
 
