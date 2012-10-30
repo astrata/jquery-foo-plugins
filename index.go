@@ -65,6 +65,8 @@ func main() {
 			"packages",
 		}
 
+		item["pkg"] = name
+
 		for _, key := range keys {
 			item[key] = pkg.Get(key)
 		}
