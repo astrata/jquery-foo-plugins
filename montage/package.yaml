@@ -5,11 +5,13 @@
   license: "MIT License"
   author: "Pedro Botelho"
   url: "http://www.codrops.com/"
+  demo_url: "http://tympanus.net/Development/AutomaticImageMontage/"
+  description: "With the following script you can automatically create a montage, either for a liquid container or a fixed size container (including fullscreen), with the option to fill all the gaps."
   latest: "latest"
-  packages: 
-    latest: 
-      source: 
+  packages:
+    latest:
+      source:
         - "latest/jquery.montage.js"
-      style: 
+      style:
         - "latest/style.css"
 

@@ -6,8 +6,10 @@
   author: "Paul Irish"
   url: "http://www.infinite-scroll.com/infinite-scroll-jquery-plugin/"
   latest: "2.0b2.120311"
-  packages: 
-    2.0b2.120311: 
-      source: 
+  demo_url: "http://www.infinite-scroll.com/trigger.html"
+  description: "This plugin aims to progressively enhance your page. Your navigation/pagination elements should be present in the HTML for non-js users, but the plugin will utilize those links to build out a more rich browsing experience."
+  packages:
+    2.0b2.120311:
+      source:
         - "2.0b2.120311/jquery.infinitescroll.js"
 

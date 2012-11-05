@@ -6,10 +6,11 @@
   author: "José Carlos Nieto"
   url: "http://jsfoo.org/contents/jquery-jsonr"
   latest: "0.1"
-  packages: 
-    0.1: 
-      requires: 
+  hidden: true
+  packages:
+    0.1:
+      requires:
         - "freeow"
-      source: 
+      source:
         - "0.1/jquery.jsonr.js"
 

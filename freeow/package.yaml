@@ -5,11 +5,13 @@
   license: "MIT License"
   author: "PJ Dietz"
   url: "http://pjdietz.com/jquery-plugins/freeow/"
+  description: "Freeow! is a plugin for making Growl-like alerts or message boxes on your website."
+  demo_url: "http://pjdietz.com/jquery-plugins/freeow/"
   latest: "1.0.1"
-  packages: 
-    1.0.1: 
-      source: 
+  packages:
+    1.0.1:
+      source:
         - "1.0.1/jquery.freeow.js"
-      style: 
+      style:
         - "1.0.1/style/freeow.css"
 

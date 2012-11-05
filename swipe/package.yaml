@@ -1,13 +1,15 @@
 ---
-  name: "jQuery TouchSwipe"
+  name: "TouchSwipe"
   stable: "1.2.5"
   copyright: "Copyright (c) 2010 Matt Bryson (www.skinkers.com)"
   license: "Dual licensed under the MIT or GPL Version 2 licenses."
   author: "Matt Bryson"
   url: "http://labs.skinkers.com/touchSwipe/"
+  description: "TouchSwipe is a jquery plugin to be used with jQuery on touch input devices such as iPad, iPhone etc."
+  demo_url: "http://labs.skinkers.com/touchSwipe/demo/1_Basic_swipe.php"
   latest: "1.2.5"
-  packages: 
-    1.2.5: 
-      source: 
+  packages:
+    1.2.5:
+      source:
         - "1.2.5/jquery.touchSwipe-1.2.5.js"
 

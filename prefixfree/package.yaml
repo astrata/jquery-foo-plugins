@@ -1,14 +1,15 @@
 ---
-  name: "prefixfree"
+  name: "Prefix Free"
   stable: "1.0.2"
   copyright: "Copyright, Lea Verou"
   license: "MIT License"
   author: "Lea Verou"
   url: "https://github.com/LeaVerou/prefixfree"
+  description: "-prefix-free lets you use only unprefixed CSS properties everywhere. It works behind the scenes, adding the current browser’s prefix to any CSS code, only when it’s needed."
   latest: "1.0.2"
-  packages: 
-    1.0.2: 
-      source: 
+  packages:
+    1.0.2:
+      source:
         - "1.0.2/prefixfree.js"
         - "1.0.2/prefixfree.jquery.js"
 

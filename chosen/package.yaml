@@ -5,11 +5,13 @@
   license: "MIT License"
   author: "Patrick Filler for Harvest"
   url: "https://github.com/harvesthq/chosen/"
+  demo_url: "https://github.com/harvesthq/chosen/"
+  description: "Chosen is a JavaScript plugin that makes long, unwieldy select boxes much more user-friendly."
   latest: "0.9.8"
-  packages: 
-    0.9.8: 
-      source: 
+  packages:
+    0.9.8:
+      source:
         - "0.9.8/chosen.jquery.js"
-      style: 
+      style:
         - "0.9.8/chosen.css"
 

@@ -1,13 +1,14 @@
 ---
-  name: "jQuery.linkify"
+  name: "Linkify"
   stable: "1.0"
   copyright: "Copyright 2009 Már Örlygsson, Hugsmiðjan ehf."
   license: "MIT and GPL License"
   author: "Már Örlygsson, Hugsmiðjan ehf."
   url: "http://github.com/maranomynet/linkify/"
+  description: "jQuery plugin that automatically finds URLs in text content and changes them into proper hyperlinks."
   latest: "1.0"
-  packages: 
-    1.0: 
-      source: 
+  packages:
+    1.0:
+      source:
         - "1.0/jquery.linkify.js"
 

@@ -5,15 +5,17 @@
   license: "MIT License"
   author: "José Carlos Nieto"
   url: "http://xiam.menteslibres.org/p/jquery-screen"
+  demo_url: "http://xiam.menteslibres.org/p/jquery-screen"
+  description: "A jQuery plugin that manages page layers: what goes first, what goes next and the transition between one and other."
   latest: "0.1"
-  packages: 
-    0.1: 
-      requires: 
+  packages:
+    0.1:
+      requires:
         - "mousewheel"
         - "transit"
         - "swipe"
-      source: 
+      source:
         - "0.1/jquery.screen.js"
-      style: 
+      style:
         - "0.1/jquery.screen.css"
 

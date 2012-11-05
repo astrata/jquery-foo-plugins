@@ -4,12 +4,14 @@
   copyright: "Copyright 2011, AUTHORS.txt (http://jqueryui.com/about"
   license: "MIT"
   author: "http://jqueryui.com/about"
-  url: "http://jquery-ui.com"
+  url: "http://jqueryui.com"
   latest: "1.8.17"
-  packages: 
-    1.8.17: 
-      source: 
+  demo_url: "http://jqueryui.com/demos/"
+  description: "jQuery UI offers a combination of interaction, effects, widgets, utilities, and themes designed to work well together or on their own."
+  packages:
+    1.8.17:
+      source:
         - "1.8.17/js/jquery-ui-1.8.17.custom.js"
-      style: 
+      style:
         - "1.8.17/css/ui-lightness/jquery-ui-1.8.17.custom.css"
 

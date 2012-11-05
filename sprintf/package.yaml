@@ -5,9 +5,10 @@
   license: "MIT, GPL or BSD License"
   author: "Carl Fürstenberg"
   url: "https://github.com/azatoth/jquery-sprintf"
+  description: "Based on the functionality of the Perl implementation of sprintf."
   latest: "0.0.6"
-  packages: 
-    0.0.6: 
-      source: 
+  packages:
+    0.0.6:
+      source:
         - "0.0.6/jquery.sprintf.js"
 

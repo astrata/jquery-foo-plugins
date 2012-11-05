@@ -5,9 +5,11 @@
   license: "MIT License, GPL License"
   author: "Ariel Flesler"
   url: "http://flesler.blogspot.com/2007/10/jqueryscrollto.html"
+  demo_url: "http://demos.flesler.com/jquery/scrollTo/"
+  description: "A small, customizable plugin for scrolling elements, or the window itself."
   latest: "1.4.2"
-  packages: 
-    1.4.2: 
-      source: 
+  packages:
+    1.4.2:
+      source:
         - "1.4.2/jquery.scrollTo-1.4.2.js"
 

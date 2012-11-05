@@ -1,13 +1,15 @@
 ---
-  name: "jQuery Masonry"
+  name: "Masonry"
   stable: "2.1.03"
   copyright: "Copyright 2012 David DeSandro"
   license: "Licensed under the MIT license"
   author: "David DeSandro"
   url: "http://masonry.desandro.com"
+  description: "A dynamic layout plugin for jQuery. The flip-side of CSS floats."
+  demo_url: "http://masonry.desandro.com"
   latest: "2.1.03"
-  packages: 
-    2.1.03: 
-      source: 
+  packages:
+    2.1.03:
+      source:
         - "2.1.03/jquery.masonry.js"
 

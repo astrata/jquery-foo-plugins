@@ -6,10 +6,11 @@
   author: "José Carlos Nieto"
   url: "http://xiam.menteslibres.org/p/jquery-picker"
   latest: "0.1"
-  packages: 
-    0.1: 
-      source: 
+  hidden: true
+  packages:
+    0.1:
+      source:
         - "0.1/jquery.picker.js"
-      style: 
+      style:
         - "0.1/jquery.picker.css"
 

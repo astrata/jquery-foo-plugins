@@ -5,9 +5,11 @@
   license: "MIT and GPL"
   author: "John Polacek"
   url: "http://johnpolacek.github.com/scrollorama/"
+  description: "The jQuery plugin for doing cool scrolly stuff"
+  demo_url: "http://johnpolacek.github.com/scrollorama/"
   latest: "latest"
-  packages: 
-    latest: 
-      source: 
+  packages:
+    latest:
+      source:
         - "latest/jquery.scrollorama.js"
 

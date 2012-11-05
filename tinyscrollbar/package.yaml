@@ -1,13 +1,15 @@
 ---
-  name: "jQuery.tinyscrollbar"
+  name: "Tiny Scrollbar"
   stable: "1.66"
   copyright: " Copyright 2010, Maarten Baijs."
   license: "Dual licensed under the MIT or GPL Version 2 licenses"
   author: "Maarten Baijs"
   url: "http://baijs.nl/tinyscrollbar/"
+  demo_url: "http://baijs.nl/tinyscrollbar/"
+  description: "Tiny Scrollbar can be used for scrolling content."
   latest: "1.66"
-  packages: 
-    1.66: 
-      source: 
+  packages:
+    1.66:
+      source:
         - "1.66/jquery.tinyscrollbar.js"
 

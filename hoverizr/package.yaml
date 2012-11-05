@@ -5,9 +5,11 @@
   license: "Creative Commons"
   author: "Ilias Iovis"
   url: "http://www.iliasiovis.com/hoverizr/"
+  demo_url: "http://www.iliasiovis.com/hoverizr/"
+  description: "Hoverizr is a responsive jQuery plugin that outputs manipulated images on top (or below) your targeted images."
   latest: "1.0"
-  packages: 
-    1.0: 
-      source: 
+  packages:
+    1.0:
+      source:
         - "1.0/jquery.hoverizr.js"
 

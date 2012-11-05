@@ -1,13 +1,15 @@
 ---
-  name: "jQuery.mousewheel"
+  name: "Mousewheel"
   stable: "3.0.6"
   copyright: "Copyright (c) 2011 Brandon Aaron (http://brandonaaron.net)"
   license: "MIT License"
   author: "Brandon Aaron"
   url: "http://brandonaaron.net/code/mousewheel/docs"
+  demo_url: "http://brandonaaron.net/code/mousewheel/demos"
+  description: "A jQuery plugin that adds cross-browser mouse wheel support."
   latest: "3.0.6"
-  packages: 
-    3.0.6: 
-      source: 
+  packages:
+    3.0.6:
+      source:
         - "3.0.6/jquery.mousewheel.js"
 

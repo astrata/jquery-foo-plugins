@@ -1,17 +1,19 @@
 ---
-  name: "jquery.scrolldeck.js"
+  name: "Scrolldeck"
   stable: "latest"
   copyright: "Copyright, John Polacek"
   license: "MIT and GPL"
   author: "John Polacek"
   url: "https://github.com/johnpolacek/scrolldeck.js"
+  demo_url: "http://johnpolacek.github.com/scrolldeck.js/"
+  description: "A jQuery plugin for making scrolling presentation decks."
   latest: "latest"
-  packages: 
-    latest: 
-      requires: 
+  packages:
+    latest:
+      requires:
         - "scrollorama"
         - "easing"
         - "scrollto"
-      source: 
+      source:
         - "latest/jquery.scrolldeck.js"
 

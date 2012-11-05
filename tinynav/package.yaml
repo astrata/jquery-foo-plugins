@@ -1,13 +1,14 @@
 ---
-  name: "TinyNav"
+  name: "Tiny Nav"
   stable: "1.03"
   copyright: "Copyright (c) 2011-2012 Viljami Salminen"
   license: "MIT License"
   author: "Viljami Salminen"
   url: "http://tinynav.viljamis.com/"
+  description: "TinyNav.js is a tiny jQuery plugin (399 bytes minified and gzipped) that converts <ul> and <ol> navigations to a select dropdowns for small screen. It also automatically selects the current page and adds selected=\"selected\" for that item."
   latest: "1.03"
-  packages: 
-    1.03: 
-      source: 
+  packages:
+    1.03:
+      source:
         - "1.03/tinynav.js"
 
