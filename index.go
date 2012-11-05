@@ -63,6 +63,8 @@ func main() {
 			"latest",
 			"license",
 			"url",
+			"demo_url",
+			"description",
 			"author",
 			"copyright",
 			"packages",

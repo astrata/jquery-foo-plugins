@@ -1,5 +1,5 @@
 ---
-  name: "jQuery.scrollTo"
+  name: "ScrollTo"
   stable: "1.4.2"
   copyright: "Copyright (c) 2007-2009 Ariel Flesler"
   license: "MIT License, GPL License"
