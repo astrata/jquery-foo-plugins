@@ -1,11 +1,12 @@
 package main
 
 import (
+	"encoding/json"
+	"fmt"
 	"github.com/gosexy/sugar"
 	"github.com/gosexy/yaml"
-	"encoding/json"
 	"os"
-	"fmt"
+	"sort"
 )
 
 const PS = string(os.PathSeparator)
@@ -36,6 +37,8 @@ func getPlugins() []string {
 		}
 	}
 
+	sort.Strings(plugins)
+
 	return plugins
 }
 
@@ -52,9 +55,9 @@ func main() {
 			panic(err)
 		}
 
-		item := sugar.Tuple {}
+		item := sugar.Tuple{}
 
-		keys := []string {
+		keys := []string{
 			"name",
 			"stable",
 			"latest",
