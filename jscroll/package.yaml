@@ -1,0 +1,15 @@
+---
+  name: "jScroll"
+  stable: "2011"
+  copyright: "Copyright (c) 2011, William Duffy - www.wduffy.co.uk"
+  license: "MIT License"
+  author: "William Duffy"
+  url: "http://www.wduffy.co.uk/jscroll/"
+  demo_url: "http://www.wduffy.co.uk/jscroll/"
+  description: "jScroll is a jQuery plugin that keeps an element in view when a user scrolls."
+  latest: "2011"
+  packages:
+    2011:
+      source:
+        - "2011/jquery.jscroll.js"
+

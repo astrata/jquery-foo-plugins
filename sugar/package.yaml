@@ -1,0 +1,14 @@
+---
+  name: "Sugar"
+  stable: "1.3.6"
+  copyright: "Copyright © 2011 Andrew Plummer"
+  license: "MIT License"
+  author: "Andrew Plummer"
+  url: "http://sugarjs.com/"
+  description: "Sugar is a Javascript library that extends native objects with helpful methods. It is designed to be intuitive, unobtrusive, and let you do more with less code."
+  latest: "1.3.6"
+  packages:
+    1.3.6:
+      source:
+        - "1.3.6/sugar-1.3.6.js"
+

@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"github.com/gosexy/sugar"
 	"github.com/gosexy/yaml"
+	"github.com/gosexy/to"
 	"os"
 	"sort"
 )
@@ -76,7 +77,9 @@ func main() {
 			item[key] = pkg.Get(key)
 		}
 
-		response = append(response, item)
+		if to.Bool(pkg.Get("hidden")) == false {
+			response = append(response, item)
+		}
 
 	}
 
