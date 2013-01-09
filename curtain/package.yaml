@@ -1,14 +1,19 @@
 ---
   name: "Curtain"
-  stable: "1.4.1"
+  stable: "2.0"
   copyright: "Copyright 2011, Victor Coulon"
   license: "MIT License"
   author: "Victor Coulon"
   url: "http://victorcoulon.fr"
   demo_url: "http://curtain.victorcoulon.fr"
   description: "Instead of classic screen clean and load page transitions, the plugin loads the new page with a vertical slide animation. Exactly like a curtain rises. External controls can be added for Next/Prev pages. And there are more features explained on the example page."
-  latest: "1.4.1"
+  latest: "2.0"
   packages:
+    2.0:
+      source:
+        - "2.0/curtain.js"
+      style:
+        - "2.0/curtain.css"
     1.4.1:
       source:
         - "1.4.1/curtain.js"
